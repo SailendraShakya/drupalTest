@@ -87,6 +87,7 @@ class ComposerStaticInitdbb71defd58592b297a23300ba1d5ac0
         ),
         'D' => 
         array (
+            'Drupal\\bootstrap\\' => 17,
             'Drupal\\Core\\' => 12,
             'Drupal\\Composer\\Plugin\\Scaffold\\' => 32,
             'Drupal\\Composer\\Plugin\\ProjectMessage\\' => 38,
@@ -275,6 +276,10 @@ class ComposerStaticInitdbb71defd58592b297a23300ba1d5ac0
         'Egulias\\EmailValidator\\' => 
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/src',
+        ),
+        'Drupal\\bootstrap\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/web/themes/contrib/bootstrap/src',
         ),
         'Drupal\\Core\\' => 
         array (
