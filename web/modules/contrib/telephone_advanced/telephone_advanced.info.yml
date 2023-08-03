@@ -1,0 +1,14 @@
+name: Telephone Advanced
+description: Adds validation and formatting to Drupal core's telephone field.
+package: Field types
+
+type: module
+core_version_requirement: ^9 || ^10
+
+dependencies:
+  - drupal:telephone
+
+# Information added by Drupal.org packaging script on 2023-01-11
+version: '1.0.2'
+project: 'telephone_advanced'
+datestamp: 1673436749

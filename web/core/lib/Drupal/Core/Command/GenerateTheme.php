@@ -52,8 +52,8 @@ class GenerateTheme extends Command {
       ->addOption('description', NULL, InputOption::VALUE_OPTIONAL, 'A description of your theme.')
       ->addOption('path', NULL, InputOption::VALUE_OPTIONAL, 'The path where your theme will be created. Defaults to: themes')
       ->addOption('starterkit', NULL, InputOption::VALUE_OPTIONAL, 'The theme to use as the starterkit', 'starterkit_theme')
-      ->addUsage('custom_theme --name "Custom Theme" --description "Custom theme generated from a starterkit theme" --path themes')
-      ->addUsage('custom_theme --name "Custom Theme" --starterkit mystarterkit');
+      ->addUsage('customtheme --name "Custom Theme" --description "Custom theme generated from a starterkit theme" --path themes')
+      ->addUsage('customtheme --name "Custom Theme" --starterkit mystarterkit');
   }
 
   /**
