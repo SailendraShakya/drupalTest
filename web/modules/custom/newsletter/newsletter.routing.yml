@@ -1,0 +1,7 @@
+newsletter-form:
+  path: 'newsletter'
+  defaults:
+    _form: '\Drupal\newsletter\Form\Newsletter'
+    _title: 'News Letter'
+  requirements:
+    _permission: 'newsletter permission'

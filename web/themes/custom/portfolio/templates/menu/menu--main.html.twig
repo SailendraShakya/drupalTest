@@ -1,0 +1,44 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a menu.
+ *
+ * Available variables:
+ * - classes: A list of classes to apply to the top level <ul> element.
+ * - dropdown_classes: A list of classes to apply to the dropdown <ul> element.
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *
+ * @ingroup templates
+ */
+#}
+<nav class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav nav-border-bottom no-transition" role="navigation">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-2 col-xs-6">
+        {% set header_logo = '/logo.png' %}
+        <a class="logo-light" href="{{ base_url }}"><img alt src="{{ themePath ~ header_logo }}" class="logo"></a>
+      </div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div class="col-md-9 col-sm-10 text-right">
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            {% for item in items %}
+              <li><a href="{{ item.url }}" class="inner-link">
+                  {{ item.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+

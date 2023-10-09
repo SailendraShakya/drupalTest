@@ -6,3 +6,17 @@
  *
  * Place your custom PHP code in this file.
  */
+
+/**
+ * Implements hook_preprocess_menu
+ * @param  array  &$vars
+ * @return [type]
+ */
+function portfolio_preprocess_menu(array &$vars) {
+		global $base_url;
+  		$theme = \Drupal::theme()->getActiveTheme();
+  		$themePath = $base_url.'/'. $theme->getPath();
+  		$vars['themePath'] = $themePath;
+  		$vars['is_front'] = $is_front ?? '';
+  		$vars['base_url'] = $base_url;
+}

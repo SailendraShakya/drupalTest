@@ -1,0 +1,5 @@
+name: 'News Letter'
+type: module
+description: 'News Letter Module'
+package: Custom
+core_version_requirement: ^10

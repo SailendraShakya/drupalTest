@@ -1,0 +1,108 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+
+<section class="parent-section no-padding post-174 page type-page status-publish hentry">
+  <div class="container">
+    <div class="row">
+      <div class="hcode-rich-snippet display-none"><span class="entry-title">Blog – Grid 2 Columns</span><span
+          class="author vcard"><a class="url fn n" href="https://hcode.themezaa.com/author/admin/">admin</a></span><span
+          class="published">August 10, 2015</span>
+        <time class="updated" datetime="2020-11-04T05:00:39+00:00">November 4, 2020</time>
+      </div>
+      <div class="entry-content">
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="wpb_column hcode-column-container  col-xs-mobile-fullwidth">
+                <div class="vc-column-innner-wrapper">
+                  <div class="blog-2col product-2">
+                    {% for row in rows %}
+                      {% set row_classes = [
+                        default_row_class ? 'views-row',
+                      ] %}
+                      <div{{ row.attributes.addClass(row_classes) }}>
+{#                        {{- row.content -}}#}
+                        <div
+                          class="post-2405 post type-post status-publish format-image has-post-thumbnail hentry category-arts-and-entertainment post_format-post-format-image">
+                          <div class="col-md-6 col-sm-6 col-xs-12 blog-listing  wow fadeInUp" data-wow-duration="300ms"
+                               style="visibility: visible; animation-duration: 300ms; animation-name: fadeInUp;">
+                            <div class="blog-post">
+                              <div class="blog-image"><a href="https://hcode.themezaa.com/elements-of-a-launch-page/"><img
+                                    width="760" height="570"
+                                    src="https://hcode.themezaa.com/wp-content/uploads/2015/09/01.jpg.webp"
+                                    class="attachment-full size-full wp-post-image ewww_webp_loaded" alt="" decoding="async"
+                                    sizes="(max-width: 760px) 100vw, 760px"
+                                    data-src-img="https://hcode.b-cdn.net/wp-content/uploads/2015/09/01.jpg"
+                                    data-src-webp="https://hcode.themezaa.com/wp-content/uploads/2015/09/01.jpg.webp"
+                                    data-srcset-webp="https://hcode.b-cdn.net/wp-content/uploads/2015/09/01.jpg.webp 760w, https://hcode.themezaa.com/wp-content/uploads/2015/09/01-600x450.jpg 600w, https://hcode.themezaa.com/wp-content/uploads/2015/09/01-300x225.jpg.webp 300w"
+                                    data-srcset-img="https://hcode.b-cdn.net/wp-content/uploads/2015/09/01.jpg 760w, https://hcode.themezaa.com/wp-content/uploads/2015/09/01-600x450.jpg 600w, https://hcode.themezaa.com/wp-content/uploads/2015/09/01-300x225.jpg 300w"
+                                    data-eio="j"
+                                    srcset="https://hcode.b-cdn.net/wp-content/uploads/2015/09/01.jpg.webp 760w, https://hcode.themezaa.com/wp-content/uploads/2015/09/01-600x450.jpg 600w, https://hcode.themezaa.com/wp-content/uploads/2015/09/01-300x225.jpg.webp 300w">
+                                  <noscript><img width=760 height=570
+                                                 src=https://hcode.b-cdn.net/wp-content/uploads/2015/09/01.jpg
+                                                 class="attachment-full size-full wp-post-image" alt decoding=async
+                                                 srcset="https://hcode.b-cdn.net/wp-content/uploads/2015/09/01.jpg 760w, https://hcode.b-cdn.net/wp-content/uploads/2015/09/01-600x450.jpg 600w, https://hcode.b-cdn.net/wp-content/uploads/2015/09/01-300x225.jpg 300w"
+                                                 sizes="(max-width: 760px) 100vw, 760px"></noscript>
+                                </a></div>
+                              <div class="blog-details hcode-blog-1">
+                                <div class="blog-date">Posted by <span class="author vcard"><a class="url fn n"
+                                                                                               href="https://hcode.themezaa.com/author/admin/">admin</a></span>
+                                  | <span class="published">02 September 2015</span>
+                                  <time class="updated display-none" datetime="2015-12-30T10:02:20+00:00">30 December 2015
+                                  </time>
+                                </div>
+                                <div class="blog-title entry-title">
+                                  <a
+                                    href="https://hcode.themezaa.com/elements-of-a-launch-page/">
+                                    {{ row.content["#view"].style_plugin.render_tokens[ loop.index0 ]['{{ title }}'] }}
+                                  </a>
+                                </div>
+                                <div class="hcode-blog-excerpt blog-short-description entry-content"><p>
+                                    {{ row.content["#view"].style_plugin.render_tokens[ loop.index0 ]['{{ body }}'] }}
+                                  </p></div>
+                                <div class="hcode-blog-separator separator-line bg-black no-margin-lr"></div>
+                                <div class="hcode-comment-likes"><a
+                                    href="https://hcode.themezaa.com/wp-admin/admin-ajax.php?action=process_simple_like&amp;nonce=72e70d2e13&amp;post_id=2405&amp;disabled=true&amp;is_comment=0"
+                                    class="sl-button blog-like sl-button-2405" data-nonce="72e70d2e13" data-post-id="2405"
+                                    data-iscomment="0" title="Like"><i class="fa-regular fa-heart"></i>383 Likes</a><a
+                                    href="https://hcode.themezaa.com/elements-of-a-launch-page/#respond" class="comment"><i
+                                      class="fa-regular fa-comment"></i>Leave a comment</a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    {% endfor %}
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>

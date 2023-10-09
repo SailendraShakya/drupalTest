@@ -1,0 +1,13 @@
+mydata.admin_link:
+  title: 'Subscriber List'
+  description: 'Subscriber List'
+  parent: system.admin
+  route_name: mydata.display_table_controller_display
+  weight: 10
+
+mydata.admin_link.sub_menu:
+  title: 'Subscriber Import'
+  description: 'Subscriber Import'
+  parent: system.admin
+  route_name: mydata.display_import_form
+  weight: 11

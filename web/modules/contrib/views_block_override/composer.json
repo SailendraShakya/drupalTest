@@ -1,0 +1,14 @@
+{
+  "name": "drupal/views_block_override",
+  "type": "drupal-module",
+  "description": "Allows overriding views contextual arguments and exposing sort from the block setting form.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://www.drupal.org/project/views_block_override",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/views_block_override",
+    "source": "http://cgit.drupalcode.org/views_block_override"
+  },
+  "require": { }
+}

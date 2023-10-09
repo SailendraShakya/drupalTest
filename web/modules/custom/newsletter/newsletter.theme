@@ -1,0 +1,11 @@
+<?php
+
+/**
+* Implements hook_preprocess_HOOK() for menu.html.twig.
+*/
+function newsletter_preprocess_node__full(&$variables) {
+  $user = \Drupal::currentUser();
+  if (!$user->isAuthenticated()) {
+    $variables['new_class'] = "anonymous-class";
+  }
+}
